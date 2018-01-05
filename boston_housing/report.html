@@ -12468,6 +12468,13 @@ Think about the pros and cons of adding more training points based on if the tra
 <li>Systematically working through multiple combinations of parameter tunes, cross validate each and determine which one gives the best performance</li>
 </ul>
 </li>
+<li>Supporting Information :<ul>
+<li>We are tuning <em>hyperparameters</em>. To differentiate both parameter and hyperparameter, we can say that, <strong>Parameter</strong> is a configuration variable that is internal to the model and whose value can be estimated from data. <strong>Hyperparameter</strong> is a configuration that is external to the model and whose value cannot be estimated from data.
+(<em>Source : <a href="https://machinelearningmastery.com/difference-between-a-parameter-and-a-hyperparameter/">https://machinelearningmastery.com/difference-between-a-parameter-and-a-hyperparameter/</a></em>)   </li>
+<li>We can use grid-search technique to determine the best hyperparamete values. Grid search technique will define a grid of parameters which can be <em>searched</em> using K-fold cross-validation.</li>
+<li>Grid search will try every combination of the provided hyper-parameter values to find the best model. Then, we can find the highest cross-validation accuracy which will match with the corresponding parameters that optimizes the learning algorithm.</li>
+</ul>
+</li>
 </ul>
 
 </div>
@@ -12744,14 +12751,30 @@ Predicted selling price for Client 3&#39;s home: $933,975.00
 <li>Client 3 - 933,975</li>
 </ul>
 </li>
+<li><p>Findings of Data Exploration (For comparision) :</p>
+<ul>
+<li><p>Minimum price: 105,000.00</p>
+</li>
+<li><p>Maximum price: 1,024,800.00</p>
+</li>
+<li><p>Mean price: 454,342.94</p>
+</li>
+<li><p>Median price 438,900.00</p>
+</li>
+<li><p>Standard deviation of prices: 165,171.13</p>
+</li>
+</ul>
+</li>
 <li><p>Reasonableness</p>
 <ul>
-<li>If we compare with data-exploration section, for client-1, price is reasonable due to lower student to teacher ratio</li>
-<li>Also, for client 2, it is reasonable due to higher poverty level nearby and higher student to teacher ratio.</li>
-<li>For client 3, price is near to maximum price in dataset, which is also reasonable because : (Below findings are as compared to other two data)<ul>
-<li>Highest number of roooms </li>
-<li>Lowest poverty level</li>
-<li>Better student to teacher ratio</li>
+<li>If we compare with above mentioned statistics, the houses' prices from client 1 and client 2 are below the mean and median prices.<ul>
+<li>For client-1, price is reasonable due to average student-to-teacher ratio and poverty level</li>
+<li>Also, for client 2, it is reasonable due to higher poverty level and higher student-to-teacher ratio.</li>
+</ul>
+</li>
+<li>The house's price for client 3 is way above the mean and median prices, as well as near to the maximum price in the dataset. <ul>
+<li>And this seems reasonable due to low poverty level and low student-to-teacher ratio with more rooms. 
+(As I explaiend in <em>Question 1's answer</em>, more rooms will result in higher price of home as compared to home with less rooms)</li>
 </ul>
 </li>
 </ul>
