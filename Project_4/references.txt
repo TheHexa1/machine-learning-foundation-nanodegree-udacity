@@ -1,0 +1,11 @@
+https://matplotlib.org/api/pyplot_api.html
+
+http://pandas.pydata.org/pandas-docs/stable/
+
+https://stackoverflow.com/questions/tagged/numpy
+
+https://stackoverflow.com/questions/tagged/pandas
+
+https://stackoverflow.com/questions/tagged/matplotlib
+
+https://en.wikipedia.org/wiki/List_of_highest-grossing_films
